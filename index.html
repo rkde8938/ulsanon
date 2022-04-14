@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>울산에 해상풍력이 옵니다</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/main.css" />
+
+  <!-- 제이쿼리 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <section id="main">
+    <img class="logo" src="images/logo.png" alt="로고" />
+  </section>
+
+  <script>
+    let mainSize = function () {
+      let windowHeigt = $(window).height();
+      console.log(windowHeigt);
+      $('#main').css('height', windowHeigt);
+    };
+
+    mainSize();
+    $(window).resize(mainSize);
+  </script>
+</body>
+
+</html>

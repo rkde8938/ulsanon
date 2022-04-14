@@ -1,0 +1,18 @@
+body {
+  background-image: url(../images/main.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#main {
+  padding: 20px;
+  display: flex;
+  justify-content:center;
+  align-items:baseline;
+}
+
+
+.logo {
+  width: 150px;
+  /* min-width: 100px; */
+}
