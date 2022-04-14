@@ -1,18 +1,74 @@
-body {
-  background-image: url(../images/main.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
+/* 범용 */
+section, div {
+  box-sizing: border-box;
 }
 
-#main {
+/* 일반 */
+body {
+  /* background-image: url(../images/main.jpeg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+
+/* 헤더 */
+header {
   padding: 20px;
   display: flex;
-  justify-content:center;
+  background-color: #fff;
+  /* justify-content:center; */
   align-items:baseline;
 }
 
-
-.logo {
+header .logo {
   width: 150px;
   /* min-width: 100px; */
+}
+
+
+/* 메인 큐브 */
+#main {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items:baseline;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+#main .cube {}
+
+#main .cube-parants {
+  display: flex;
+}
+
+#main .cube100 {
+  width: 100%;
+  background-color: rgb(161, 188, 255);
+}
+
+#main .cube50 {
+  width: calc(50% - 2.5px);
+}
+
+#main .cube50:nth-child(3){
+  background-color: pink;
+}
+
+#main .cube25 {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 5px;
+  background-color: #ccc;
+  z-index: 5;
+}
+
+#main .cube25:last-child {
+  margin-bottom: 0;
+}
+
+#main .cube100h {
+  width: 100%;
+  background-color: skyblue;
 }
