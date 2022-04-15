@@ -1,6 +1,32 @@
 /* 범용 */
-section, div {
+body {
+  background: #000;
+}
+
+.wrap {
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+}
+
+section, div, header {
   box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  color: #666;
+  text-decoration:dashed;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin-top: 10px;
+  line-height: 1.4;
 }
 
 /* 일반 */
@@ -22,22 +48,60 @@ header {
 }
 
 header .logo {
-  width: 150px;
-  /* min-width: 100px; */
+  width: 20%;
+  min-width: 100px;
 }
+
+/* 상단바 햄버거 메뉴 */
+header .header__menu .menu__button {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+
+header .header__menu #dropdown_menu {
+  position: absolute;
+  width: 100%;
+  max-width: 768px;
+  left: 0;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+header .header__menu #dropdown_menu ul {
+ display: block;
+ height: 0px;
+ overflow: hidden;
+ transition: .5s;
+}
+
+header .header__menu #dropdown_menu ul a {
+  display: block;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+header .header__menu #dropdown_menu ul a:hover {
+  background-color: #ccc;
+}
+
 
 
 /* 메인 큐브 */
 #main {
-  padding: 20px;
+  padding: 0 20px 20px;
   width: 100%;
   display: flex;
   align-items:baseline;
   flex-wrap: wrap;
   gap: 5px;
 }
+#main a {
+  display: block;
+}
 
-#main .cube {}
+#main .cube {
+}
 
 #main .cube-parants {
   display: flex;
@@ -45,15 +109,17 @@ header .logo {
 
 #main .cube100 {
   width: 100%;
-  background-color: rgb(161, 188, 255);
+  background:url(../images/cube1.png);
+  background-size: contain;
 }
 
 #main .cube50 {
   width: calc(50% - 2.5px);
 }
 
-#main .cube50:nth-child(3){
-  background-color: pink;
+#main a.cube50 {
+  background:url(../images/cube4.png);
+  background-size: cover;
 }
 
 #main .cube25 {
@@ -64,11 +130,85 @@ header .logo {
   z-index: 5;
 }
 
+#main .cube25:first-child {
+  background:url(../images/cube2.png);
+  background-size: cover;
+}
+
 #main .cube25:last-child {
   margin-bottom: 0;
+  background:url(../images/cube3.png);
+  background-size: cover;
 }
 
 #main .cube100h {
   width: 100%;
-  background-color: skyblue;
+  background:url(../images/cube5.png);
+  background-size: cover;
+}
+
+/* 푸터 */
+footer {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+footer .copyright {
+  text-align: center;
+}
+
+/* 컨텐츠 */
+.contents {
+  padding: 20px;
+}
+
+.contents h1 {
+  font-size: 28px;
+}
+
+.contents h2 {
+  font-size: 24px;
+}
+
+
+/* 발족식 */
+
+
+#conference h2 {
+  margin-top: 30px;
+}
+
+#conference h3 {
+  margin-top: 0;
+  color: #666;
+}
+
+#conference ul {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+#conference .hash {
+  margin: 20px 0;
+  color: #666;
+}
+
+
+
+
+
+/* 미디어쿼리 */
+
+/* 디바이스가 커지면 모바일 버전으로 유지 */
+@media screen and (min-width:769px) {
+  .wrap {
+    width: 768px;
+  }
+
+  header {
+    width: 768px;
+  }
 }

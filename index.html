@@ -9,30 +9,49 @@
 
   <title>울산에 해상풍력이 옵니다</title>
 
+  <!-- 구글 폰트 및 머티리얼 아이콘 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/main.css" />
 
   <!-- 제이쿼리 -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
   <script defer src="./js/main.js"></script>
 
 </head>
 
 <body>
-  <header>
-    <img class="logo" src="images/logo.png" alt="로고" />
-  </header>
+  <!-- PC 랩 -->
+  <div class="wrap">
+    <header>
+      <a href="./index.html">
+          <img class="logo" src="images/logo.png" alt="로고" />
+        </a>
+        
+    </header>
 
-  <section id="main">
-    <div class="cube cube100"></div>
-    <div class="cube cube50">
-      <div class="cube cube25"></div>
-      <div class="cube cube25"></div>
-    </div>
-    <div class="cube cube50"></div>
-    <div class="cube cube100h"></div>
-    <div class="cube cube100h"></div>
-  </section>
+    <section id="main">
+      <a class="cube cube100" title="지지서명" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd_2NZxGXndDHxwtLhBzjE6JhNGOXp4Ftd4QMBgTvcLqbkkig/viewform?usp=pp_url&entry.1172270084=010-" ></a>
+      <div class="cube cube50">
+        <a class="cube cube25"></a>
+        <a class="cube cube25" href="./conference"></a>
+      </div>
+      <a class="cube cube50"></a>
+      <a class="cube cube100h"></a>
+      <a class="cube cube100h"></a>
+    </section>
+
+    <footer>
+      <p class="copyright">
+        &copy; <span class="this-year"></span> 해상풍력 울산시민추진단. Desing by <a href="http://takemdesign.com/" target="_blank">takem</a>.
+      </p>
+    </footer>
+  </div>
 
   <!-- 애널리틱스 -->
   <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
