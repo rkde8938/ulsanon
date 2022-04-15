@@ -21,7 +21,7 @@ img {
 
 a {
   color: #666;
-  text-decoration: none;
+  text-decoration-line: underline;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul {
@@ -40,7 +40,7 @@ body {
 
 /* 헤더 */
 header {
-  padding: 20px;
+  padding: 10px 20px 5px;
   display: flex;
   background-color: #fff;
   /* justify-content:center; */
@@ -48,7 +48,7 @@ header {
 }
 
 header .logo {
-  width: 20%;
+  width: 50%;
   min-width: 100px;
 }
 
@@ -141,19 +141,26 @@ header .header__menu #dropdown_menu ul a:hover {
   background-size: cover;
 }
 
-#main .cube100h {
+#main .cube100h:nth-child(4) {
   width: 100%;
   background:url(../images/cube5.png);
+  background-size: cover;
+}
+
+#main .cube100h:nth-child(5) {
+  width: 100%;
+  background:url(../images/cube6.png);
   background-size: cover;
 }
 
 /* 푸터 */
 footer {
   width: 100%;
-  height: 80px;
+  height: 60px;
   display: flex;
   justify-content:center;
   align-items: center;
+  font-size: 12px;
 }
 
 footer .copyright {
@@ -170,7 +177,7 @@ footer .copyright {
 }
 
 .contents h2 {
-  font-size: 22px;
+  font-size: 20px;
   color:#000
 }
 
@@ -186,6 +193,7 @@ footer .copyright {
   margin-top: 0;
   color: #666;
 }
+
 
 #conference ul {
   margin-top: 40px;

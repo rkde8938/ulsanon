@@ -24,6 +24,15 @@ cubeHeight();
 $(window).resize(cubeHeight);
 
 
+let wrapHeight = function () {
+  let = windowHeight = $(window).innerHeight();
+  $('.contents').css('min-height', windowHeight - $('header').height() - $('footer').height());
+}
+
+wrapHeight();
+$(window).resize(wrapHeight);
+
+
 // 카피라이트 현재 년도 표시
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear(); // 현재의 년도 (2022)
@@ -34,6 +43,6 @@ $('.menu__button').click(function () {
   if (dropdownMenu.height() > 0) {
     dropdownMenu.css('height', '0');
   } else {
-    dropdownMenu.css('height', '312px');
+    dropdownMenu.css('height', '374.4px');
   };
 });
