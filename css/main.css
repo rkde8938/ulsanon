@@ -79,6 +79,8 @@ header .header__menu #dropdown_menu ul a {
   display: block;
   padding: 20px 10px;
   text-align: center;
+  text-decoration: none;
+  color:#000;
 }
 
 header .header__menu #dropdown_menu ul a:hover {
